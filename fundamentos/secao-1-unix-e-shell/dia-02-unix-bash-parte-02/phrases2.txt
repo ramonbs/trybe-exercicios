@@ -1,0 +1,7 @@
+Conte quantas linhas tem o arquivo skills2.txt.
+Crie um arquivo chamado top_skills.txt usando o skills2.txt, contendo as 3 primeiras skills em ordem alfabética.
+Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha.
+Conte o número de linhas que contêm as letras br.
+Conte o número de linhas que não contêm as letras br.
+Adicione dois nomes de países ao final do arquivo phrases2.txt.
+Crie um novo arquivo chamado bu
