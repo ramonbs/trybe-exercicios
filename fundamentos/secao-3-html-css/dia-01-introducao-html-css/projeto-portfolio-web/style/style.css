@@ -9,3 +9,11 @@ body{
     color: white;
 
 }
+
+strong{
+    color: aqua;
+}
+
+ul{
+   line-height: 25px; 
+}
