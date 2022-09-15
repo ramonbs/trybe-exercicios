@@ -17,3 +17,23 @@ strong{
 ul{
    line-height: 25px; 
 }
+
+#HTML {
+    font-size: 1.1em;
+}
+
+#CSS {
+    font-size: 1.2em;
+}
+
+#JAVASCRIPT {
+    font-size: 1.3em;
+}
+
+#REACT {
+    font-size: 1.4em;
+}
+
+#PYTHON{
+    font-size: 1.5em;
+}
