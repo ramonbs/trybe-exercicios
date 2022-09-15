@@ -1,7 +1,11 @@
 h1{
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 body{
     font-family: sans-serif;
+    background-color: rgb(46,37,50);
+    color: white;
+
 }
