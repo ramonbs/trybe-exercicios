@@ -1,0 +1,49 @@
+/* TAGS */
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(46,37,50);
+    color: white;
+
+}
+
+strong{
+    color: aqua;
+}
+
+ul{
+   line-height: 25px; 
+}
+
+
+
+
+/* Class */
+
+.button-link{
+    border-radius: 4px;
+    background-color: aqua;
+    padding: 8px 10px;
+    color: rgb(46,37,50);
+    text-align: center;
+    text-decoration: none;
+}
+
+.list-item{
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+/* IDs */
