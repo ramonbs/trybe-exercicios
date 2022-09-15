@@ -18,22 +18,17 @@ ul{
    line-height: 25px; 
 }
 
-#HTML {
-    font-size: 1.1em;
+
+/* TAGS */
+
+.item-list{
+    font-size: 0.8em;
 }
 
-#CSS {
-    font-size: 1.2em;
-}
-
-#JAVASCRIPT {
-    font-size: 1.3em;
-}
-
-#REACT {
-    font-size: 1.4em;
-}
-
-#PYTHON{
-    font-size: 1.5em;
+.button-link {
+    padding: 8px 10px;
+    background-color: aqua;
+    border-radius: 4px;
+    color: rgb(46,37,50);
+    text-decoration: none;
 }
