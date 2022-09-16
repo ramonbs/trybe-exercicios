@@ -10,10 +10,10 @@ header{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #2e1c3b;
-    padding: 15px;
-    position:relative;
+    padding: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -22,7 +22,7 @@ h1{
     font-family: 'Roboto Mono', monospace;
     color: white;
     line-height: 100px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 h3 {
@@ -39,6 +39,10 @@ body{
 
 strong {
     color: #2e1c3b;
+}
+
+em {
+    color: green;
 }
 
 ul {
