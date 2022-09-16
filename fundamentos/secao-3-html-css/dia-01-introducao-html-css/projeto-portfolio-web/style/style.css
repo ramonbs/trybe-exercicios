@@ -108,6 +108,31 @@ footer{
     color: #2e1c3b;
 }
 
+.social-button {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid white;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s
+        cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+
+.social-button:hover{
+    color: #2e1c3b;
+    background-color: aliceblue;
+}
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    
+}
+
 .typewriter-effect h1{
     overflow: hidden;
     border-right: .15em solid rgb(46, 6, 110);
