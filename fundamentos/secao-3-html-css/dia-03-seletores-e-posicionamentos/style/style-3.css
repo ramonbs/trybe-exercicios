@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    align-items: center;
+}
+
+p {
+   text-align: center;
+}
+
+li:hover {
+    background-color: aquamarine;
+}
+
+li:active {
+    font-family: 'Courier New', Courier, monospace;
+    font: red;
+}
+
+.list-wrapper:hover {
+   border: 2px solid red;
+}
+
+.list {
+    list-style: none;
+}
+
+.paragraph:active {
+    border: 2px solid black;
+}
