@@ -1,3 +1,6 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 header{
     display: flex;
     text-align: center;
@@ -11,7 +14,7 @@ header{
 
 h1{
     width: 100%;
-    font-family: 'monospace';
+    font-family: 'Roboto Mono', monospace;
     color: white;
     line-height: 100px;
     font-size: 40px;
@@ -56,10 +59,10 @@ footer{
     text-align: center;
 }
 
-.photo-ramon{
-    width: 100px !important;
-    border-radius: 100% !important;
-    border-width: 10px;
+.ramon-photo img{
+    width: 200px;
+    border-radius: 100%;
+    border: 5px white solid;
 }
 
 .about-me{
