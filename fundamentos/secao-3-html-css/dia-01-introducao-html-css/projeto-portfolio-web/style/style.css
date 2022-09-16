@@ -1,13 +1,63 @@
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2e1c3b;
+    padding: 15px;
+    position:relative;
+}
+.header-text{
+    color: wheat;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.introduction {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ramon-photo{
+    text-align: center;
+    border-radius: 100%;
+}
+
+.about-me{
+    display: flex;
+    position: relative;
+    color: #121212;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #121212, #2e1c3b, #4a2932, #883167);
+    background-size: 400% 400%;
+    animation: backgroundTransition 8s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    line-height: 1.1em;
+    font-size: 50px;
 }
 
 body{
-    font-family: sans-serif;
-    background-color: rgb(46,37,50);
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
     color: white;
-
+    line-height: 20px;
 }
 
 strong{
@@ -21,14 +71,17 @@ ul{
 
 /* TAGS */
 
-.item-list{
-    font-size: 0.8em;
+
+/* transição background */
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 80% 100%;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
 }
 
-.button-link {
-    padding: 8px 10px;
-    background-color: aqua;
-    border-radius: 4px;
-    color: rgb(46,37,50);
-    text-decoration: none;
-}
