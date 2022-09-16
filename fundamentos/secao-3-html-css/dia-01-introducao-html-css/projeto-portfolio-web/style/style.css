@@ -27,6 +27,7 @@ h1{
 
 h3 {
     margin-top: 80px;
+    color: white;
 }
 
 body{
@@ -41,9 +42,9 @@ strong {
     color: #2e1c3b;
 }
 
-em {
-    color: green;
-}
+/* em {
+    text-decoration: none;
+} */
 
 ul {
    line-height: 50px; 
@@ -101,6 +102,7 @@ footer{
 }
 
 .skills{
+    background-color: #121212;
     display: flex;
     flex-direction: column;
 }
@@ -109,7 +111,7 @@ footer{
     font-size: 30px;
     text-decoration: none;
     font-family: monospace, serif;
-    color: #2e1c3b;
+    line-height: 80px;
 }
 
 .social-button {
@@ -145,6 +147,23 @@ footer{
     letter-spacing: .15em;
     animation: typing 3.5s steps(40,end),
     cursor-animation.75s step-end infinite;
+}
+
+.item-wrapper{
+    padding: 1rem 10rem;
+    text-decoration: none;
+    color: white;
+}
+
+.item-hover:hover{
+    color:#2e1c3b;
+    background-color: aliceblue;
+}
+
+/* IDs */
+
+#trybe{
+    color: green;
 }
 
 
