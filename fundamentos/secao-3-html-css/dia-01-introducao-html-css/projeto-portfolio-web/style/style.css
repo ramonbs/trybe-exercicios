@@ -1,6 +1,11 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(https://fonts.googleapis.com);
+}
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     text-align: center;
@@ -20,6 +25,10 @@ h1{
     font-size: 40px;
 }
 
+h3 {
+    margin-top: 80px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -28,16 +37,17 @@ body{
     line-height: 20px;
 }
 
-strong{
+strong {
     color: #2e1c3b;
 }
 
-ul{
-   line-height: 25px; 
+ul {
+   line-height: 50px; 
+   list-style: none;
 }
 
 footer{
-    height: 100px;
+    font-size: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,7 +82,7 @@ footer{
     flex-direction: column;
     text-align: center;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 60px;
 }
 .wrapper{
     height: 100vh;
@@ -84,6 +94,18 @@ footer{
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-list {
+    font-size: 30px;
+    text-decoration: none;
+    font-family: monospace, serif;
+    color: #2e1c3b;
 }
 
 .typewriter-effect h1{
