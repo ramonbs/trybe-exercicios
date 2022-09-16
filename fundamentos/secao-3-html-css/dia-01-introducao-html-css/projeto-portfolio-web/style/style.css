@@ -7,6 +7,44 @@ header{
     padding: 15px;
     position:relative;
 }
+
+
+h1{
+    width: 100%;
+    font-family: 'monospace';
+    color: white;
+    line-height: 100px;
+    font-size: 40px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: white;
+    line-height: 20px;
+}
+
+strong{
+    color: #2e1c3b;
+}
+
+ul{
+   line-height: 25px; 
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e1c3b;
+    color: white;
+}
+
+/* CLASS Selectors */
+
 .header-text{
     color: wheat;
     text-decoration: none;
@@ -18,9 +56,10 @@ header{
     text-align: center;
 }
 
-.ramon-photo{
-    text-align: center;
+.photo-ramon{
+    width: 100px;
     border-radius: 100%;
+    border-width: 10px;
 }
 
 .about-me{
@@ -34,7 +73,6 @@ header{
 }
 .wrapper{
     height: 100vh;
-    width: 100%;
     background: linear-gradient(-45deg, #121212, #2e1c3b, #4a2932, #883167);
     background-size: 400% 400%;
     animation: backgroundTransition 8s ease-in-out infinite;
@@ -45,31 +83,15 @@ header{
     position: relative;
 }
 
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    line-height: 1.1em;
-    font-size: 50px;
+.typewriter-effect h1{
+    overflow: hidden;
+    border-right: .15em solid rgb(46, 6, 110);
+    margin: 0 auto;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40,end),
+    cursor-animation.75s step-end infinite;
 }
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    color: white;
-    line-height: 20px;
-}
-
-strong{
-    color: aqua;
-}
-
-ul{
-   line-height: 25px; 
-}
-
-
-/* TAGS */
 
 
 /* transição background */
@@ -85,3 +107,14 @@ ul{
     }
 }
 
+/* Efeito de escrita no h1 */
+@keyframes typing{
+    from { width: 0}
+    to { width: 100%}
+}
+
+/* Efeito do cursor */
+@keyframes cursor-animation{
+    from, to {border-color: transparent}
+    50% { border-color: rgb(46, 6, 110);}
+}
