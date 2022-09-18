@@ -1,0 +1,60 @@
+.order-list {
+    background-color: yellow;
+}
+
+ol li.impar{
+    text-transform: uppercase;
+}
+
+ol li.par {
+    color: green;
+}
+
+.title {
+    color: red;
+}
+
+h1.italic {
+    font-size: 40px;
+    border: 1px black solid;
+}
+
+li {
+    font-size: 20px;
+}
+
+li.italic {
+    font-weight: bold;
+}
+
+.lg {
+    color: blue;
+}
+
+li.jv {
+    background-color: pink;
+}
+
+
+ul.web-list li a:hover {
+    font-weight: bolder;
+}
+
+ul.web-list li a.stack:hover {
+    color: orange;
+}
+
+ul.web-list li a.w3:hover {
+    color: green;
+}
+
+ul.web-list li a.mdn:hover {
+    color: black;
+}
+ ul.web-list li a.dev:hover {
+    color: yellow;
+ }
+
+ ul.web-list li a.trybe:hover {
+    color: green;
+ }
