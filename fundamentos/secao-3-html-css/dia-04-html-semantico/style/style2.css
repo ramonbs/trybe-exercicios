@@ -3,3 +3,55 @@ img {
     height: 200px;
 }
 
+main {
+    width: 70%;
+}
+
+aside, footer, nav {
+    border: 1px gray solid;
+    width: 29%;
+  }
+  
+  body {
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: .1px;
+    line-height: 33px;
+    font-family: Georgia, serif;
+  }
+  
+  .centered {
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .header {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  nav {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px gray solid;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  table {
+    width: 70%;
+  }
