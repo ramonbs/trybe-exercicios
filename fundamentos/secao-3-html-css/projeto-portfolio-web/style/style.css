@@ -39,7 +39,6 @@ strong {
 }
 
 ul {
-   line-height: 50px; 
    list-style: none;
    margin: 0;
 }
@@ -47,11 +46,13 @@ ul {
 footer{
     font-size: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     background-color: rgb(52,58,64);
     color: white;
-    height: 50px;
+    font-size: 18px;
+    height: 75px;
 }
 
 /* CLASS Selectors */
@@ -75,16 +76,20 @@ footer{
     border: 5px white solid;
 }
 
+.subtitle-wrapper {
+    position: relative;
+    left: -30%;
+}
+
 .about-me{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     color: #121212;
     flex-direction: column;
     text-align: center;
     font-size: 30px;
     line-height: 100px;
 }
-
 
 .introduction-wrapper{
     height: 100vh;
@@ -100,11 +105,8 @@ footer{
 
 .skills{
     background-color: #121212;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 40px;
 }
 
 .item-list {
@@ -112,18 +114,6 @@ footer{
     text-decoration: none;
     font-family: monospace, serif;
     line-height: 80px;
-}
-
-.footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 10px;
 }
 
 .social-button {
@@ -161,7 +151,17 @@ footer{
     color: white;
 }
 
-.back-button {
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.back-button > a {
     position: fixed; 
     bottom: 50px; 
     right: 20px; 
@@ -169,12 +169,11 @@ footer{
     border: none; 
     outline: none; 
     background-color: rgba(201, 202, 207, 0.829); 
-    color: white !important; 
+    color: rgb(34, 27, 27); 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px; 
-    text-decoration: none;
 }
 
 /* Hovers*/
