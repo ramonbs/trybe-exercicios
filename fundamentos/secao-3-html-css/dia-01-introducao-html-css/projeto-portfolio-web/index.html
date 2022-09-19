@@ -5,71 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Ramon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1>Olá, sou Ramon Giovani Brandão da Silva</h1>
-    <img id="img" src="./img/photo_2022-08-29_16-50-42.jpg" alt="Ramon" width="100px">
-    <p>
-        Atualmente moro em <strong>Mogi das Cruzes</strong>, São Paulo. Tenho 26 anos, sou formado em Biomedicina e também estou cursando <strong>Engenharia de Software</strong>.
-    </p>
-    <h3>
-        Algumas das minhas habilidades são:
-    </h3>
-    <ul>
-        <li>
-            <a id="HTML"href="#HTML"><em>
-                HTML
-            </em></a>
-        </li>
-        <li>
-            <a id="CSS" href="#CSS"><em>
-                CSS
-            </em></a>
-        </li>
-        <li>
-            <a id="JAVASCRIPT" href="#JAVASCRIPT"><em>
-                JAVASCRIPT
-            </em></a>
-        </li>
-        <li>
-            <a id="REACT" href="#REACT"><em>
-                REACT
-            </em></a>
-        </li>
-        <li>
-            <a id="PYTHON" href="#PYTHON"><em>
-                PYTHON
-            </em></a>
-        </li>
-    </ul>
+    <header>
+        <a class ="header-text" href="#about">
+            About me
+        </a>
+        <a class ="header-text" href="#my-skills">
+            My skills
+        </a>
+        <a class ="header-text" href="https://github.com/ramonbs" target="_blank">
+            Projects
+        </a>
+    </header>
 
-    <a href="#img" alt="Ramon" target="_blank">Link foto</a>
+    <div  class="wrapper">
+        <div  class="introduction typewriter-effect">
+            <h1>Hello, I'm Ramon Giovani Brandão da Silva</h1>
+        </div>
+        <div class="ramon-photo">
+            <img id="img" src="./img/photo_2022-08-29_16-50-42.jpg" alt="Ramon" width="300px">
+        </div>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ramon-silva-5b1077176/" class="social-button">
+                Linkedin
+            </a>
+            <a href="https://github.com/ramonbs" class="social-button">
+                Github
+            </a>
+        </div>
+    </div>
+   
+
+    <div class="about-me">
+        <div id="about">
+            <p>
+                I'm living in <strong>Mogi das Cruzes, São Paulo - Brazil. </strong>  
+            </p>
+            <p>
+                I'm <strong>26</strong> years old,
+            </p>
+            <p>
+                I've a Degree in <strong>Biomedicine</strong> and
+            </p>
+            <p>
+                I'm studying <strong>Software Engineer</strong> and Web Developer.
+            </p>
+            <p>
+                This project was made for a block in a course develop by <a id="trybe" href="https://www.betrybe.com/"><em>Trybe</em>!</a>
+            </p>
+    </div>
     
-    <br>
+    <div id="my-skills" class="skills">
+        <h3>
+            Some of my skills:
+        </h3>
+        <ul>
+            <div class="item-wrapper">
+                <li class="item-hover">
+                    <a class="item-list"><em>
+                        HTML
+                    </em></a>
+                </li>
+                <li class="item-hover">
+                    <a class="item-list"><em>
+                        CSS
+                    </em></a>
+                </li>
+                <li class="item-hover">
+                    <a class="item-list"><em>
+                        JAVASCRIPT
+                    </em></a>
+                </li>
+                <li class="item-hover">
+                    <a class="item-list" ><em>
+                        REACT
+                    </em></a>
+                </li>
+                <li class="item-hover">
+                    <a class="item-list"><em>
+                        PYTHON
+                    </em></a>
+                </li>
+            </div>
+        </ul>
+    </div>
     
-    <br>
-    
-    <a href="https://www.reddit.com" target="_blank"> Conheça algumas das melhores comunidades mundiais!</a>
-
-    <p id="HTML">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque cum, sapiente quasi adipisci sequi consequatur est, aliquam dicta earum distinctio obcaecati minus? Id, quaerat vel ipsum quisquam odio reprehenderit impedit assumenda fugit quidem itaque vitae inventore maiores adipisci? Eveniet, mollitia!
-    </p>
-
-    <p id="CSS">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum at exercitationem aspernatur fugiat voluptatibus optio recusandae culpa possimus nostrum maxime aliquam, pariatur reprehenderit quisquam laborum voluptas iusto nihil eligendi error.
-    </p>
-
-    <p id="JAVASCRIPT">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum consequuntur esse, recusandae omnis debitis alias cupiditate inventore ullam dignissimos consequatur.
-    </p>
-
-    <p id="REACT">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod laboriosam, eaque quos aliquam tempora alias nostrum? Inventore tempora voluptas corrupti. Nam culpa, accusamus eveniet labore cum repudiandae iure itaque cupiditate adipisci ipsa, aliquam reprehenderit tempore commodi tenetur esse pariatur hic cumque? Odio voluptatum magni dolores a eligendi cumque enim?
-    </p>
-
-    <p id="PYTHON">
-
-    </p>
+    <footer>
+        Created by Ramon Giovani 
+    </footer>
 </body>
 </html>
