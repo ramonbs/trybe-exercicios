@@ -3,12 +3,13 @@ img {
     height: 200px;
 }
 
-main {
-    width: 70%;
+article {
+    display: inline-block;
+    width: 65%;
 }
 
-aside, footer, nav {
-    border: 1px gray solid;
+aside {
+    display: inline-block;
     width: 29%;
   }
   
