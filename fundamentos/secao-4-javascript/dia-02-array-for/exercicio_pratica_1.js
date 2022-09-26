@@ -73,19 +73,21 @@
 // //log the result of the function compareNumbers 
 // console.log(compareNumbers(studentNumbers, generateRandomNumbers()));
 
-// //function to generate no duplicate 6 random numbers between 1 and 100
-// function generateRandomNumbersNoDuplicate(){
-//     let randomNumbers = [];
-//     for(let i = 0; i < 6; i += 1){
-//         let random = Math.ceil(Math.random() * 100 + 1);
-//         while(randomNumbers.includes(random)){
-//             random = Math.ceil(Math.random() * 100 + 1);
-//         }
-//         randomNumbers.push(random);
-//     }
-//     return randomNumbers;
-// }
-
+//function to generate 6 unique random numbers between 1 and 60
+function generateRandomNumbers(){
+    let randomNumbers = [];
+    for(let i = 0; i < 6; i += 1){
+        let random = Math.ceil(Math.random() * 60);
+        while(randomNumbers.includes(random)){
+            random = Math.ceil(Math.random() * 60);
+        }
+        randomNumbers.push(random);
+    }
+    return randomNumbers;
+}
+for(let i = 0; i < 10; i += 1){
+    console.log(generateRandomNumbers());
+}
 
 /* ------------------------------------------------------------------  */
 
@@ -191,51 +193,51 @@
 
 //Bubble Sort
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (let indexdois = 1; indexdois < numbers.length; indexdois += 1) {
-  for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[indexdois] < numbers[index]) {
-      let position = numbers[index];
-      numbers[index] = numbers[indexdois];
-      numbers[indexdois] = position;
-      console.log(numbers);
-    }
-  }
-}
+// for (let indexdois = 1; indexdois < numbers.length; indexdois += 1) {
+//   for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[indexdois] < numbers[index]) {
+//       let position = numbers[index];
+//       numbers[index] = numbers[indexdois];
+//       numbers[indexdois] = position;
+//       console.log(numbers);
+//     }
+//   }
+// }
 
-//Buble sort Final multiplica a posição pela próxima
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let novoArr = [];
-for (let index = 0; index < numbers.length; index += 1) {
-  if (index == numbers.length - 1) {
-    novoArr.push(numbers[index] * 2);
-  } else {
-    novoArr.push(numbers[index] * numbers[index + 1]);
-  }
-}
-console.log(novoArr);
+// //Buble sort Final multiplica a posição pela próxima
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let novoArr = [];
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (index == numbers.length - 1) {
+//     novoArr.push(numbers[index] * 2);
+//   } else {
+//     novoArr.push(numbers[index] * numbers[index + 1]);
+//   }
+// }
+// console.log(novoArr);
 
-//Ordena o array em forma crescente e multiplica o termo pelo seguinte.
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let novoArr = [];
-for (let index = 1; index < numbers.length; index += 1) {
-  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
-    if (numbers[index] < numbers[secondIndex]) {
-      let position = numbers[index];
-      numbers[index] = numbers[secondIndex];
-      numbers[secondIndex] = position;
-    }
-  }
-}
-for (let index = 0; index < numbers.length; index += 1) {
-  if (index == numbers.length - 1) {
-    novoArr.push(numbers[index] * 2);
-  } else {
-    novoArr.push(numbers[index] * numbers[index + 1]);
-  }
-}
-console.log(novoArr);
+// //Ordena o array em forma crescente e multiplica o termo pelo seguinte.
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let novoArr = [];
+// for (let index = 1; index < numbers.length; index += 1) {
+//   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//     if (numbers[index] < numbers[secondIndex]) {
+//       let position = numbers[index];
+//       numbers[index] = numbers[secondIndex];
+//       numbers[secondIndex] = position;
+//     }
+//   }
+// }
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (index == numbers.length - 1) {
+//     novoArr.push(numbers[index] * 2);
+//   } else {
+//     novoArr.push(numbers[index] * numbers[index + 1]);
+//   }
+// }
+// console.log(novoArr);
 
 
 
