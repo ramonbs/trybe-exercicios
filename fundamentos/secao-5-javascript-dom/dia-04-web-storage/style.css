@@ -1,0 +1,35 @@
+body, header, footer {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+p{
+    color: black;
+}
+
+.button {
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: #2f2c2c;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all; 
+}

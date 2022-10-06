@@ -102,22 +102,28 @@
 //     controlLeft -= 1;
 // }
 
-// let n = 5;
-// let string = '';
+        
 
-
-// for(let i = 0; i < n; i += 1){
-//     if(i % 2 != 0){
-//         console.log(string(' ', (n*2 - i) /2 ) + string('*', i)); 
+//    *
+//   * *  
+//  *   *
+// *******
+// //Triangulo buraco no meio
+// let n = 7;
+// let middle = (n + 1) / 2;
+// let left = middle;
+// let right = middle;
+// let symbol = '*';
+// for(let lineIndex = 1; lineIndex <= middle; lineIndex += 1){
+//     let outputLine = '';
+//     for(let columnIndex = 1; columnIndex <= n; columnIndex += 1){
+//         if(columnIndex == left || columnIndex == right || lineIndex == middle){
+//             outputLine += symbol;
+//         } else {
+//             outputLine += ' ';
+//         }
 //     }
+//     left -= 1;
+//     right += 1;
+//     console.log(outputLine);
 // }
-
-
-//sum of 1 to 100
-// let sum = 0;
-// for(let i = 1; i <= 100; i += 1){
-//     sum += i;
-// }
-// console.log(sum);
-
-
