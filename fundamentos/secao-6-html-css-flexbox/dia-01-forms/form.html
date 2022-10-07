@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Forms</h1>
+    </header>
+    <form action="" method="get">
+      <section id="text">
+        <label for="name" id="input-name">Nome</label>
+        <input
+          type="text"
+          name="fullName"
+          id="name"
+          minlength="10"
+          maxlength="40"
+        />
+        <label for=""></label>
+      </section>
+      <section>
+        <label for="e-mail">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="e-mail"
+          minlength="10"
+          maxlength="50"
+        />
+      </section>
+      <section id="radio">
+        <input type="radio" name="opcao" id="opcao-1" />
+        <label for="opcao-1">Opção 1</label>
+
+        <input type="radio" name="opcao" id="opcao-2" />
+        <label for="opcao-2">Opção 2</label>
+
+        <input type="radio" name="opcao" id="opcao-3" />
+        <label for="opcao-3">Opção 3</label>
+
+        <input type="radio" name="opcao" id="opcao-4" />
+        <label for="opcao-4">Opção 4</label>
+      </section>
+      <section id="textarea">
+        <h2>Espaço para digitar a resposta:</h2>
+        <textarea
+          name="text-area"
+          id="text-area"
+          cols="30"
+          rows="10"
+          maxlength="500"
+        ></textarea>
+      </section>
+      <section id="date">
+        <label for="data">Data: </label>
+        <input type="date" name="localData" id="data" />
+      </section>
+      <section id="check">
+        <label for="agree1">Quer viajar?</label>
+        <input type="checkbox" name="agree" id="agree1" />
+
+        <label for="agree2">Autoriza seu uso de imagem?</label>
+        <input type="checkbox" name="agree2" id="agree2" />
+      </section>
+      <section id="img">
+      </section>
+
+      <section id="button">
+        <button type="submit" id="submit">Enviar</button>
+        <button type="reset" id="reset">Apagar</button>
+      </section>
+    </form>
+  </body>
+</html>
