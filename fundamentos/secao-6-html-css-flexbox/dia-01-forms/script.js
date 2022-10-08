@@ -1,20 +1,20 @@
 function preventButtonSubmit() {
   const button = document.querySelector("#submit");
   //validate if number of characters is between 10 and 40 in the input name and input email
-  const inputName = document.querySelector("#input-name");
-  const inputEmail = document.querySelector("#input-email");
-  if (inputName.value.length < 10 || inputName.value.length > 40) {
-    alert("Name must be between 10 and 40 characters");
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
-  }
-  if (inputEmail.value.length < 10 || inputEmail.value.length > 50) {
-    alert("Email must be between 10 and 50 characters");
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
-  }
+  const inputName = document.querySelector("#name");
+  const inputEmail = document.querySelector("#e-mail");
+  button.addEventListener("click", (event) => {
+    if (inputName.value.length < 10 || inputName.value.length > 40) {
+      alert("Name must be between 10 and 40 characters");
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+      });
+    }
+    if (inputEmail.value.length < 10 || inputEmail.value.length > 50) {
+      alert("Email must be between 10 and 50 characters");
+    }
+    event.preventDefault();
+  });
 }
 
 function resetButton() {
@@ -31,6 +31,7 @@ function createLabel() {
     if (event.target.checked) {
       const label = document.createElement("label");
       label.setAttribute("for", "agree2");
+      label.setAttribute("class", "form-label");
       label.textContent = "Eu aceito os termos de uso: ";
       sectionLabel.appendChild(label);
     } else {
