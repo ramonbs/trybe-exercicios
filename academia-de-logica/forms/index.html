@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel Trybe</title>
+  </head>
+
+  <body>
+    <!-- Seu código aqui -->
+    <!-- Header -->
+    <header class="header-trybe">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s"
+        alt="logo da Trybe"
+      />
+      <h1>Hotel Trybe</h1>
+    </header>
+
+    <!-- Formulários -->
+    <form>
+      <section class="hotel-form">
+        <label for="inputCheckin">Check-in: </label>
+        <input
+          type="date"
+          class="inputCheckin"
+          id="inputCheckin"
+          name="checkin-data"
+        />
+        <label for="inputCheckout">Check-out: </label>
+        <input
+          type="date"
+          class="inputCheckout"
+          id="inputCheckout"
+          name="checkout-data"
+        />
+      </section>
+      <section class="hotel-form">
+        <input type="radio" name="quarto" id="quarto1" class="bedroom" /><label
+          for="quarto1"
+          >Quarto Comum</label
+        >
+        <input type="radio" name="quarto" id="quarto2" class="bedroom" /><label
+          for="quarto2"
+          >Quarto Club</label
+        >
+
+        <input type="radio" name="quarto" id="quarto3" class="bedroom" /><label
+          for="quarto3"
+          >Quarto Luxo</label
+        >
+      </section>
+
+      <section class="hotel-form">
+        <label for="pessoas">Pessoas: </label>
+        <select name="nPessoas" id="pessoas" class="nPessoas">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </section>
+
+      <section class="hotel-form">
+        <textarea
+          placeholder="Campo de observações"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="obs"
+        ></textarea>
+      </section>
+
+      <button id="submit-btn" type="submit">Reservar</button>
+
+      <section class="list-section">
+        <h2>Lista de Reservas</h2>
+        <ol id="lista"></ol>
+      </section>
+
+      <button id="clear-btn">Limpar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
