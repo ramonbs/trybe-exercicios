@@ -5,12 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alice's Adventures in Wonderland</title>
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
-  <link rel="stylesheet" href="alice.css" />
+  <link rel="stylesheet" href="./style/alicestyle.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <p>Alice's Adventures in Wonderland</p>
+        <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="toggle">
+                <label class="checkbox" for="toggle">
+                   <div class="trace"></div>
+                   <div class="trace"></div>
+                   <div class="trace"></div>
+               </label>
+            </div>
+        </div>
+      <h1>Alice's Adventures in Wonderland</h1>
       <nav>
         <ul>
           <li>Home</li>
@@ -19,33 +29,37 @@
         </ul>
       </nav>
     </header>
-    <aside class="aside-one">
-      <h2>Chapters</h2>
-      <ul>
-        <li>I. Down the Rabbit-Hole</li>
-        <li>II. The Pool of Tears</li>
-        <li>III. A Caucus-Race and a Long Tale</li>
-        <li>IV. The Rabbit Sends in a Little Bill</li>
-        <li>V. Advice from a Caterpillar</li>
-        <li>VI. Pig and Pepper</li>
-        <li>VII. A Mad Tea-Party</li>
-        <li>VIII. The Queen's Croquet-Ground</li>
-        <li>IX. The Mock Turtle's Story</li>
-        <li>X. The Lobster Quadrille</li>
-        <li>XI. Who Stole the Tarts?</li>
-        <li>XII. Alice's Evidence</li>
-      </ul>
-    </aside>
-    <aside class="aside-two">
-      <h2>Information</h2>
-      <ul>
-        <li>Title: Alice's Adventures in Wonderland</li>
-        <li>Author: Lewis Carroll</li>
-        <li>Release Date: June 25, 2008 [EBook #11]</li>
-        <li>Last Updated: July 14, 2014</li>
-        <li>Language: English</li>
-      </ul>
-    </aside>
+    <hr>
+    <section id="indice">
+      <aside class="aside-one">
+        <h2>Chapters</h2>
+        <ul>
+          <li>I. Down the Rabbit-Hole</li>
+          <li>II. The Pool of Tears</li>
+          <li>III. A Caucus-Race and a Long Tale</li>
+          <li>IV. The Rabbit Sends in a Little Bill</li>
+          <li>V. Advice from a Caterpillar</li>
+          <li>VI. Pig and Pepper</li>
+          <li>VII. A Mad Tea-Party</li>
+          <li>VIII. The Queen's Croquet-Ground</li>
+          <li>IX. The Mock Turtle's Story</li>
+          <li>X. The Lobster Quadrille</li>
+          <li>XI. Who Stole the Tarts?</li>
+          <li>XII. Alice's Evidence</li>
+        </ul>
+      </aside>
+      <aside class="aside-two">
+        <h2>Information</h2>
+        <ul>
+          <li>Title: Alice's Adventures in Wonderland</li>
+          <li>Author: Lewis Carroll</li>
+          <li>Release Date: June 25, 2008 [EBook #11]</li>
+          <li>Last Updated: July 14, 2014</li>
+          <li>Language: English</li>
+        </ul>
+      </aside>
+    </section>
+    <hr>
     <article class="main-content">
       <h1>
         CHAPTER I. Down the Rabbit-Hole
