@@ -1,0 +1,25 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+} */
+
+/*------------------------------------------------------------------------------*/
+#box-results {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(8, auto);
+  margin-top: 2%;
+  border: 1px solid white;
+}
+
+.box {
+  border: 1px solid white;
+  font-size: 12px;
+}
+
+h1 {
+  color: red;
+}
