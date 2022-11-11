@@ -1,27 +1,28 @@
-let readButton = document.getElementById('input-button');
+import './index.css';
 
-readButton.addEventListener('click', () => {
-  let userResponse = document.getElementById('input-box').value;
-  console.log(userResponse);
+document.querySelector('#app').innerHTML = `
+    <section id="section-title">
+      <div id="wrapper-title">
+        <h1>Casa de <span>Câmbio</span></h1>
+      </div>
+      <figure>
+        <img src="https://rockiereact.surielementor.com/static/media/banner-01.eec598253cec8f46e54f.png" alt="Logo da casa de câmbio">
+      </figure>
+      </section>
+      <section id="section-input">
+      <div id="wrapper-button">
+      <label>Digite a moeda: </label>
+          <input type="text" id="input-box" placeholder="Insira uma moeda..." />
+          </div>
+          <button id="input-button">Pesquisar</button>
+      </section>
 
-  let requestURL = `https://api.exchangerate.host/latest?base=${userResponse}`;
-  fetch(requestURL, {
-    method: 'GET',
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (userResponse === '') {
-        window.alert('Você precisa passar uma moeda!');
-      } else if (userResponse != data.base) {
-        window.alert('Moeda inexistente!');
-      } else {
-        const divBox = document.getElementById('box-results');
-        Object.entries(data.rates).forEach((item) => {
-          const divs = document.createElement('div');
-          divs.innerHTML = `${item[0]}: ${item[1]}`;
-          divs.setAttribute('class', 'box');
-          divBox.appendChild(divs);
-        });
-      }
-    });
-});
+      <section id="wrapper-divs">
+        <div>
+          <p class="phrase"></p>
+        </div>
+        <div id="box-results">
+        </div>
+      </section>
+    </div>
+`;

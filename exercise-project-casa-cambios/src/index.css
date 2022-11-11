@@ -1,25 +1,61 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
-} */
-
-/*------------------------------------------------------------------------------*/
-#box-results {
-  display: grid;
-  grid-template-columns: repeat(8, auto);
-  grid-template-rows: repeat(8, auto);
-  margin-top: 2%;
-  border: 1px solid white;
-}
-
-.box {
-  border: 1px solid white;
-  font-size: 12px;
+body {
+  @apply bg-black text-white;
 }
 
 h1 {
-  color: red;
+  @apply text-9xl font-bold text-white;
 }
+
+span {
+  @apply font-bold text-green-500;
+}
+
+button {
+  @apply bg-slate-400 text-white font-bold py-2 px-4 rounded my-2 w-44 text-lg hover:bg-pink-500;
+}
+
+label {
+  @apply text-white text-3xl font-bold;
+}
+
+input {
+  @apply bg-slate-500 rounded py-2 px-4 text-white leading-tight focus:outline-none focus:bg-pink-600 h-12 text-lg;
+}
+
+img {
+  @apply max-w-none;
+}
+
+#section-title {
+  @apply flex justify-around text-left font-bold text-white flex-row py-10 bg-[#18191d] w-full;
+}
+
+#wrapper-title {
+  @apply my-2 w-10;
+}
+
+#wrapper-button {
+  @apply flex justify-center items-center flex-col my-5 gap-3;
+}
+
+#wrapper-divs {
+  @apply bg-[#18191d] rounded px-5 py-2 w-10/12 h-fit mx-auto shadow-slate-50;
+}
+
+#box-results {
+  @apply grid grid-cols-8 gap-2;
+}
+
+.box {
+  @apply bg-gray-200 rounded p-2 h-10 text-center w-auto;
+}
+
+.phrase {
+  @apply text-4xl font-bold text-white my-2;
+}
+
+/*------------------------------------------------------------------------------*/
