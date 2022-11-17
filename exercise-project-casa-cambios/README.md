@@ -1,7 +1,3 @@
-# Acess the project here:
-https://exchange-project.surge.sh/
-
-
 # template-vite-js-tailwind-v3
 
 - **template of:** vite + vanilaJS
