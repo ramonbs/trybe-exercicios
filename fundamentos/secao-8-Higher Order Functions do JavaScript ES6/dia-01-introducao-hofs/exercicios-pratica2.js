@@ -20,11 +20,19 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const dragonDamage = (strength, min) =>
-  Math.round(Math.random() * (strength - min) + min);
+const dragonDamage = (strength, min) => {
+  const totalDamage = Math.round(Math.random() * (strength - min) + min);
 
-const warriorDamage = (strength, weaponDmg) =>
-  Math.round(Math.random() * (strength * weaponDmg - strength) + strength);
+  return totalDamage;
+};
+
+const warriorDamage = (strength, weaponDmg) => {
+  const totalDamage = Math.round(
+    Math.random() * (strength * weaponDmg - strength) + strength
+  );
+
+  return totalDamage;
+};
 
 const mageDamage = {
   damage: (intelligence) =>
