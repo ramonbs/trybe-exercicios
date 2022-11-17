@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+}
+
+h1 {
+  @apply bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent;
+}
+
+h3 {
+  @apply my-4 text-2xl font-bold text-gray-500;
+}
+
+button {
+  @apply bg-pink-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-2xl;
+}
