@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+    @apply w-96 m-2;
+}
+
+section {
+    @apply bg-gray-100 justify-center items-center flex flex-col;
+}
+
+h2 {
+    @apply text-4xl font-bold text-gray-700;
+}
+
+p {
+    @apply text-xl text-gray-600 my-2;
+}
