@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Redux - Color Picker - Step 1 - Initial State</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>Color: <span id="value">white</span></p>
+      <button id="previous">Previous color</button>
+      <button id="next">Next color</button>
+    </div>
+
+    <script>
+      const INITIAL_STATE = {
+        colors: ["white", "black", "red", "green", "blue", "yellow"],
+        index: 0,
+      };
+
+      const reducer = (state = INITIAL_STATE, action) => {
+        switch (action.type) {
+          case "NEXT_COLOR":
+            return {
+              ...state,
+              index:
+                state.index === state.colors.length - 1 ? 0 : state.index + 1,
+            };
+          case "PREVIOUS_COLOR":
+            return {
+              ...state,
+              index:
+                state.index === 0 ? state.colors.length - 1 : state.index - 1,
+            };
+          default:
+            return state;
+        }
+      };
+
+      const store = Redux.createStore(reducer);
+
+      const previous = document.getElementById("previous");
+      const next = document.getElementById("next");
+      const value = document.getElementById("value");
+
+      previous.addEventListener("click", () => {
+        store.dispatch({ type: "PREVIOUS_COLOR" });
+      });
+
+      next.addEventListener("click", () => {
+        store.dispatch({ type: "NEXT_COLOR" });
+      });
+
+      store.subscribe(() => {
+        const state = store.getState();
+        value.innerText = state.colors[state.index];
+      })
+    </script>
+  </body>
+</html>

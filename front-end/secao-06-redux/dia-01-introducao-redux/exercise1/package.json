@@ -1,0 +1,17 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@redux-devtools/extension": "^3.2.5",
+    "vite": "^4.0.4"
+  }
+}
