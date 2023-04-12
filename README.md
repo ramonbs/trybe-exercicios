@@ -131,38 +131,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 18: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [ x ] 18-1: _Context API do React_
+- [ x ] 18-2: _React Hooks - useState e useContext_
+- [ x ] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [ x ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [ x ] 19-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [ x ] 20-1: _Banco de dados SQL_
+- [ x ] 20-2: _Encontrando dados em um banco de dados_
+- [ x ] 20-3: _Filtrando dados de forma específica_
+- [ x ] 20-4: _Manipulando tabelas_
+- [ x ] 20-5: _[Projeto - All For One]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ x ] 21-1: _Funções mais usadas no SQL_
+- [ x ] 21-2: _Descomplicando JOINs e UNIONs_
+- [ x ] 21-3: _Stored Routines & Subqueries_
+- [ x ] 21-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [ x ] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [ x ] 22-2: _Normalização, Formas Normais e Dumps_
+- [ x ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [ x ] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL
 
@@ -185,14 +185,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 26: Intro - NodeJS
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
+- [ x ] 26-1: _NodeJS - Introdução_
+- [ x ] 26-2: _NodeJS - Fluxo Assíncrono_
+- [ x ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
 ##### Bloco 27: NodeJS
 
-- [ ] 27-1: _Express: HTTP com Node.js_
+- [ x ] 27-1: _Express: HTTP com Node.js_
 - [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
 - [ ] 27-3: _[Projeto - Cookmaster]()_
 
