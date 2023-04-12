@@ -1,9 +1,9 @@
 # COMANDOS NPM BACK-END
 
 ### Instalação do Express.
-A palavra  _framework_, quer dizer estrutura ou molde e é basicamente isso que ela é para uma aplicação. O framework é como um template, que te sugere uma forma específica de construir sua aplicação e te dá ferramentas pra fazer isso mais rápido.
+O termo _framework_ tem o significado de "estrutura" ou "modelo" e, em essência, é exatamente isso que ele representa para uma aplicação. O _framework_ é comparável a um modelo pré-concebido que oferece uma maneira específica de construir sua aplicação e disponibiliza recursos para tornar esse processo mais eficiente.
 
-O  **Express**  é um  _framework_  que nos ajuda a organizar e construir APIs robustas e flexíveis, nos dando ferramentas que fazem as coisas acontecerem com poucas linhas de código, abstraindo a lógica e códigos por trás de funcionalidades muito comuns nas aplicações.
+O **Express** é uma ferramenta de desenvolvimento que auxilia na organização e construção de APIs sólidas e flexíveis, oferecendo recursos que simplificam o processo de desenvolvimento e abstraem a lógica e o código por trás de funções comuns nas aplicações, permitindo que sejam executadas com um mínimo de código.
 ```bash
 npm i express@4.17.1 --save-exact
 ```
@@ -22,7 +22,6 @@ touch .eslintignore .eslintrc.json
 <hr />
 
 ### Criação do package.json
-O **Package.json** é o arquivo onde estão listadas todas as dependências de um projeto. Lá estão sinalizados quais são os pacotes essenciais para o funcionamento da nossa aplicação, tanto em produção (na chave `dependencies`), quanto em desenvolvimento (na chave `dev-dependencies`).
 ```bash
 git init
 ```
@@ -35,14 +34,14 @@ npm i nodemon@2.0.15 --save-dev --save-exact
 <hr />
 
 ### Instalação do Mocha - testes
-O **[mocha](https://mochajs.org/)  é um  _framework_  de testes para JavaScript**, isso significa que ele nos ajuda a arquitetar os nossos testes fornecendo a estrutura e interface para escrevermos e executarmos eles.
+O **[mocha](https://mochajs.org/)  é um  _framework_  de testes para JavaScript**, que nos ajuda a realizar testes unitários de nossa aplicação.
 ```bash
 npm install mocha@8.4.0 chai@4.3.4 --save-dev --save-exact
 ```
 <hr />
 
 ### Instalação do Chai- testes
- O [chai](https://www.chaijs.com/api/bdd/) é uma biblioteca de asserção que auxilia o desenvolvimento de testes com Node.js e que pode ser combinada com qualquer framework de testes JavaScript.
+ O [chai](https://www.chaijs.com/api/bdd/) é biblioteca de asserção e é uma ferramenta útil para desenvolvedores que trabalham com Node.js, pois ela ajuda na criação de testes automatizados. Essa biblioteca pode ser integrada a qualquer _framework_ de testes **JavaScript**, permitindo que seja utilizada em conjunto com outras ferramentas de teste para aumentar a eficácia do processo de testes.
 ```bash
 npm install chai-http@4.3.0 --save-dev --save-exact
 ```
@@ -59,7 +58,7 @@ npm install sinon@11.1.1 --save-dev --save-exact
 # Middlewares mais comuns
 
 ## Interpretando conteúdo JSON com  `express.json`
-Um _middleware_ bastante utilizado é o `express.json`, ele é um _middleware_ que lê o conteúdo da requisição HTTP, interpreta os conteúdos como JSON e cria no objeto `req` uma propriedade `body` com o valor encontrado no conteúdo.
+O `express.json` é um _middleware_ que lê o conteúdo da requisição HTTP, interpretando conteúdos como JSON e criando objetos do tipo `req` e uma propriedade `body` de todos os arquivos encontrados.
 
 ```js
 const express = require('express');
@@ -75,7 +74,7 @@ const express = require('express');
 
 ## Servindo arquivos estáticos com  `express.static`
 
-Um outro  _middleware_  que já vem com o Express é o  `express.static`. Ele pega o  `req.path`  e usa para procurar um arquivo. Se encontrado, ele já responde com esse arquivo. Se não, ele assume que alguém vai responder essa requisição e simplesmente passa para o próximo.
+O express.static é um tipo de _middleware_ que já vem embutido no _framework_ **Express**. Ele é responsável por processar o req.path da requisição e buscar um arquivo correspondente. Caso o arquivo seja encontrado, o express.static responde com esse arquivo. Se o arquivo não for encontrado, o _middleware_ simplesmente passa a requisição para o próximo _middleware_ na cadeia, assumindo que outro _middleware_ ou tratador de requisição será capaz de lidar com a requisição.
 
 ```js
 // src/app.js
@@ -89,7 +88,7 @@ Um outro  _middleware_  que já vem com o Express é o  `express.static`. Ele pe
 
 ## Gerando logs da aplicação com  `morgan`
 
-Um  _log_  nada mais é do que  **um registro organizado e consistente de todas as ocorrências de um evento**. Logs são fundamentais para reconhecer bugs em uma aplicação web, dando visibilidade para a frequência e as condições em que os bugs ocorreram. E como você nunca sabe quando um bug vai acontecer, é conveniente ter um log de  _todas_  as requisições recebidas.
+Um gerador de _logs_ para toda aplicação express.
 
 ```js
 const express = require('express');
