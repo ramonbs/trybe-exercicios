@@ -64,7 +64,7 @@ O `express.json` é um _middleware_ que lê o conteúdo da requisição HTTP, in
 const express = require('express');
 const app = express();
 
-6app.post('/fail', (req, res) => {
+app.post('/fail', (req, res) => {
   res.status(200).json({ greeting: `Hello, ${req.body.nome}!` });
 });
 
