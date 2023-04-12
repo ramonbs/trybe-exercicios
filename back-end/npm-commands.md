@@ -109,7 +109,7 @@ Outro  _middleware_  bem comum nas aplicações back-end é o  **cors**, que per
 e em seguida adicionar as seguintes linhas:
 ```js
 const cors = require('cors');
-2app.use(cors());
+app.use(cors());
 ```
 
 ## Retornando 404 com um  _middleware_  global customizado
