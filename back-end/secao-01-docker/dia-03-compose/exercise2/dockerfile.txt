@@ -1,0 +1,25 @@
+# requisito 1
+# docker container create -i --name 01container alpine:3.12
+
+# requisito 2
+# docker container start 01container
+
+# requisito 3
+# docker container ls -f "name=01container"
+
+# requisito 4
+# docker container exec 01container cat /etc/os-release
+
+# requisito 5
+# docker container stop 01container
+# docker container rm -f 01container
+
+# requisito 6
+# docker pull nginx:1.21.3-alpine
+
+# requisito 7
+# docker container run -d --rm --name 02images -p 3000:3000 nginx:1.21.3-alpine
+
+# requisito 8
+# docker container stop 02images
+

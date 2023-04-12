@@ -1,0 +1,16 @@
+{
+  "name": "makingscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello-world.js",
+  "scripts": {
+    "start": "node hello-world.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "1.4.10"
+  }
+}

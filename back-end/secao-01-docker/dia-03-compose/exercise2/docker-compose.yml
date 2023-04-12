@@ -1,0 +1,58 @@
+  version: '3'
+
+  services:
+    ghost:
+      image: ghost:1-alpine
+      restart: always
+      ports:
+        - 2368:2368
+      environment:
+        database__client: mysql
+        database__connection__host: db
+        database__connection__user: root
+        database__connection__password: mysql
+        database__connection__database: ghost
+      depends_on: 
+        - 'db'
+      networks:
+        - my-network
+    
+    db:
+      image: mysql:5.7.40
+      environment:
+        MYSQL_ROOT_PASSWORD: mysql
+      volumes:
+        - db-data:/var/lib/mysql
+      networks:
+        - my-network
+
+
+  volumes:
+      db-data:
+
+  networks:
+      my-network:
+
+# version: '3'
+
+#   services:
+#     ghost:
+#       image: ghost:1-alpine
+#       restart: always
+#       ports:
+#         - 2368:2368
+#       depends_on:
+#         - "db"
+#       environment:
+#         # see https://ghost.org/docs/config/
+#         database__client: mysql
+#         database__connection__host: db
+#         database__connection__user: root
+#         database__connection__password: password
+#         database__connection__database: ghost
+
+#     db:
+#       # platform: Linux/x86_64 # Caso utilize MacOS, descomente essa linha
+#       image: mysql:5.7.40
+#       environment:
+#         MYSQL_ROOT_PASSWORD: password
