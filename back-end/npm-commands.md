@@ -62,13 +62,13 @@ O `express.json` é um _middleware_ que lê o conteúdo da requisição HTTP, in
 
 ```js
 const express = require('express');
-4const app = express();
-5
+const app = express();
+
 6app.post('/fail', (req, res) => {
-7  res.status(200).json({ greeting: `Hello, ${req.body.nome}!` });
-8});
-9
-10app.use(express.json());
+  res.status(200).json({ greeting: `Hello, ${req.body.nome}!` });
+});
+
+app.use(express.json());
 ```
 
 
@@ -78,12 +78,12 @@ O express.static é um tipo de _middleware_ que já vem embutido no _framework_ 
 
 ```js
 // src/app.js
-2
-3//...
-4const app = express();
-5// configura para procurar o path no diretório ./images
-6app.use(express.static('./images'));
-7//....
+
+//...
+const app = express();
+// configura para procurar o path no diretório ./images
+app.use(express.static('./images'));
+//....
 ```
 
 ## Gerando logs da aplicação com  `morgan`
