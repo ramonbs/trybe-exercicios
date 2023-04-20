@@ -55,6 +55,25 @@ O  [Sinon](https://sinonjs.org/)  é uma ferramenta que auxilia na criação e u
 npm install sinon@11.1.1 --save-dev --save-exact
 ```
 
+### Instalação do Camelize e Snakeize
+
+```bash
+npm i camelize
+npm i snakeize
+```
+
+### Instalação do mysql2
+> Ferramenta para se ter acesso ao mysql através do node
+
+```bash
+npm i mysql2
+```
+
+### Instalação do Joi
+> O Joi é uma ferramenta para realizar validações de forma fácil e segura.
+```bash
+npm install joi
+```
 # Middlewares mais comuns
 
 ## Interpretando conteúdo JSON com  `express.json`
