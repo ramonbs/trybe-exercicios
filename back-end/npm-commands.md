@@ -66,7 +66,7 @@ npm i snakeize
 > Ferramenta para se ter acesso ao mysql através do node
 
 ```bash
-npm i mysql2
+npm install --save mysql2
 ```
 
 ### Instalação do Joi
